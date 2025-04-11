@@ -9,7 +9,7 @@ A Zsh plugin that provides useful aliases and functions for the [fuckmit](https:
 1. Clone this repository into your Oh My Zsh custom plugins directory:
 
 ```bash
-git clone https://github.com/mingeme/fuckmit-zsh.git ${ZSH:-~/.oh-my-zsh}/plugins/fuckmit
+git clone https://github.com/mingeme/fuckmit-zsh.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fuckmit
 ```
 
 2. Add the plugin to your `.zshrc` file:
