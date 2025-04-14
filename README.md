@@ -9,7 +9,7 @@ A Zsh plugin that provides useful aliases and functions for the [fuckmit](https:
 1. Clone this repository into your Oh My Zsh custom plugins directory:
 
 ```bash
-git clone https://github.com/mingeme/fuckmit-zsh.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fuckmit
+git clone https://github.com/mingeme/zsh-fuckmit.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fuckmit
 ```
 
 2. Add the plugin to your `.zshrc` file:
@@ -29,19 +29,3 @@ plugins=(... fuckmit)
 | `fmad` | `fuckmit -a -d` | Add all files and dry run |
 | `fmaA` | `fuckmit -a -A` | Add all files and amend last commit |
 | `fmAd` | `fuckmit -A -d` | Amend last commit dry run |
-
-## Usage Examples
-
-```bash
-# Generate a commit message for staged changes
-fm
-
-# Stage all changes and generate a commit
-fma
-
-# Amend the last commit with a new AI-generated message
-fmA
-
-# Stage all changes and amend the last commit
-fmaA
-```
