@@ -9,15 +9,6 @@ alias fmad='fuckmit -a -d'      # Add all files and dry run
 alias fmaA='fuckmit -a -A'      # Add all files and amend last commit
 alias fmAd='fuckmit -A -d'      # Amend last commit dry run
 
-# Completion for fuckmit if available
-if (( $+commands[fuckmit] )); then
-  # Generate completion file if it doesn't exist
-  if [[ ! -f "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-completions/src/_fuckmit" ]]; then
-    mkdir -p "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-completions/src"
-    fuckmit completion zsh > "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-completions/src/_fuckmit"
-  fi
-fi
-
 # Help function
 fm-help() {
   echo "fuckmit Zsh plugin aliases:"
