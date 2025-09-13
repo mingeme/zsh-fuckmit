@@ -23,9 +23,8 @@ plugins=(... zsh-fuckmit)
 | Alias | Command | Description |
 |-------|---------|-------------|
 | `fm` | `fuckmit` | Run fuckmit |
-| `fma` | `fuckmit -a` | Add all untracked and modified files |
-| `fmA` | `fuckmit -A` | Amend the last commit |
 | `fmd` | `fuckmit -d` | Generate message without committing (dry run) |
-| `fmad` | `fuckmit -a -d` | Add all files and dry run |
-| `fmaA` | `fuckmit -a -A` | Add all files and amend last commit |
-| `fmAd` | `fuckmit -A -d` | Amend last commit dry run |
+| `fma` | `git add . && fuckmit` | Add all untracked and modified files |
+| `fmA` | `git reset HEAD~ --soft && fuckmit` | Amend the last commit |
+| `fmAd` | `git reset HEAD~ --soft && fuckmit -d` | Amend last commit dry run |
+| `fmm` | `git reset $(git rev-parse --abbrev-ref origin/HEAD) --soft && fuckmit` | Reset to main branch and commit |
